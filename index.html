@@ -17,7 +17,7 @@
             
         }
         .bill-header{
-            border-bottom: 2px dotted gray;
+            border-bottom: 1px dotted gray;
             
         }
         .header-logo{
@@ -36,12 +36,42 @@
         }
         .table-content{
             margin-left: 300px;
+            height:"70px";
+             weight:"70%";
+
             
         }
         .bill-footer{
             width: 100%;
             background-color: red;
         }
+        @media screen and (max-width : 600px) {
+            .header-logo{
+            height: 100px;
+            padding-left: 150px;
+        }
+            .table-content{
+            margin-left: 0px;
+        }   
+        }
+        @media screen and (min-width : 601px) and (max-width: 768px) {
+            .header-logo{
+            height: 150px;
+            padding-left: 150px;
+        }
+            .table-content{
+            margin-left:10px;
+        }   
+        }
+        @media screen and (min-width : 769px) and (max-width: 992px) {
+            .header-logo{
+            height: 150px;
+            padding-left: 220px;
+        }
+            .table-content{
+            margin-left:85px;
+        }   
+    }
     </style>
 </head>
 <body>
@@ -55,9 +85,11 @@
         9923747529</h4>
     </div>
     <div class="bill-content">
-        <h3 style="padding-left: 90px;">Bill No : <pre>                                                                                      Date:  /  /20  </pre></h3>
-
-       <table border="1" height="70px" weight="70%" class="table-content">
+        <h3 style="padding-left: 90px;">Bill No : 
+            <br>
+            Date :   /  /20  
+            <br></h3>
+       <table border="1"  class="table-content">
         <thead>
             <tr>
             <th width="70px">QTY</th>
